@@ -1,1 +1,9 @@
- 
+#game {
+text-align: center
+} 
+#canvas{
+border: 3px solid;
+}
+#score{
+font-family: "permanent marker",cursive;
+}
