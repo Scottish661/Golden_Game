@@ -16,7 +16,7 @@
             pen.fillRect(this.x, this.y, this.width, this.height);
         }
         gravity(){
-            this.y (this.y + 2) % CS;
+            this.y  = (this.y + 2) % CS;
             }
     }
     const player = new Player(50, 50, 30, 40,'blue')
