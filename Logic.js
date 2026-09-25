@@ -26,5 +26,8 @@
     player.draw();
      setTimeout(loop,1000/60);
     }
-    loop()
+    window.onload = function() {
+    loop();
+};
+
     
