@@ -16,7 +16,9 @@
             pen.fillRect(this.x, this.y, this.width, this.height);
         }
         gravity(){
+            if(this.y < 250){
             this.y++;
+            }
             }
     }
     const player = new Player(50, 50, 30, 40,'red')
