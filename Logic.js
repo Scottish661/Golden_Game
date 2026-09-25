@@ -15,10 +15,14 @@ class Player {
         pen.fillStyle = this.color;
         pen.fillRect(this.x, this.y, this.width, this.height);
     }
+    gravity(){
+        this.y++;
+        }-
 }
 const player = new Player(50, 50, 30, 40,'red')
 function loop(){
 pen.clearRect(0, 0, CS, CS);
+player.gravity();
 player.draw();
 }
 loop()
