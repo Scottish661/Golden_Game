@@ -16,7 +16,7 @@ class Player {
         pen.fillRect(this.x, this.y, this.width, this.height);
     }
     gravity(){
-        this.y += 10
+        this.y += 200
         }-
 }
 const player = new Player(50, 50, 30, 40,'red')
