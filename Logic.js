@@ -24,5 +24,6 @@ function loop(){
 pen.clearRect(0, 0, CS, CS);
 player.gravity();
 player.draw();
+requestAnimationFrame(loop);
 }
 loop()
