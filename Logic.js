@@ -17,5 +17,8 @@ class Player {
     }
 }
 const player = new Player(50, 50, 30, 40,'red')
+function loop(){
 pen.clearRect(0, 0, CS, CS);
 player.draw();
+}
+loop()
