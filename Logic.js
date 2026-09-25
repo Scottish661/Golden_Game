@@ -19,7 +19,7 @@
             this.y (this.y + 2) % CS;
             }
     }
-    const player = new Player(50, 50, 30, 40,'red')
+    const player = new Player(50, 50, 30, 40,'blue')
     function loop(){
     pen.clearRect(0, 0, CS, CS);
     player.gravity();
