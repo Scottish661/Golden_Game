@@ -4,10 +4,10 @@ canvas = document.getElementById("canvas");
 
 pen = canvas.getContext("2d");
 
-let speed = 4
+let speed = 4;
 
-canvas.width = 	CS
+canvas.width = 	CS;
 
-canvas.height = CS
+canvas.height = CS;
 
-let h = document.getElementById("h")
+let h = document.getElementById("h");
