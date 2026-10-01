@@ -1,7 +1,7 @@
 class Player {
 	constructor(x, y){
 		Object.assign(this, {
-			x, y
+			x, y,
 			size: 50,
 			health: 1,
 			dead: false,
@@ -25,7 +25,7 @@ class Player {
 	draw() {
 		pen.fillStyle = this.color
 			pen.fillRect(this.x,this.y,
-				this.width,this.height)
+				this.size,this.size);
 	}
 		update() {
 			h.textContent = "this is your y position" + " " +this.y
@@ -38,7 +38,7 @@ class Player {
 }
 let player1 = new Player(50, 360)
 function Player_loop() {
-	pen.clearRect(0, 0, CS, CS)2
+	pen.clearRect(0, 0, CS, CS)
 	player1.update()
 	requestAnimationFrame(Player_loop)
 }
