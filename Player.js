@@ -1,9 +1,7 @@
-let playerImage = new Image()
-playerImage.src = "player.gif"
 class Player {
-	constructor(x, y) {
+	constructor(x, y){
 		Object.assign(this, {
-			x, y,
+			x, y
 			size: 50,
 			health: 1,
 			dead: false,
@@ -25,13 +23,9 @@ class Player {
 		return this.y + this.size >= 444
 	}
 	draw() {
-		pen.drawImage(
-			playerImage,
-			this.x,
-			this.y,
-			this.size,
-			this.size
-		)
+		pen.fillStyle = this.color
+			pen.fillRect(this.x,this.y,
+				this.width,this.height)
 	}
 		update() {
 			h.textContent = "this is your y position" + " " +this.y
