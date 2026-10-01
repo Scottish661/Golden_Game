@@ -1,6 +1,8 @@
-if(player.immortal = true){
-return;
-}
-else if (player.health =< 0){
-player.dead = true
-}
+function death(player){
+		if(player.immortal){
+			return
+		}
+		if(player.health <= 0){
+			player.dead = true
+		}
+	}
