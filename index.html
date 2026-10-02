@@ -34,9 +34,9 @@ You start at 5 points.
         function dont_report() {
             let ran = Math.random();
             if (ran >= 1/2) {
-                points += 1; // Leader didn't find out, 2nd in command rewards you 1 point
+                points++
             } else {
-                points -= 2; // Leader found out and took 2 points
+                points -= 2; 
             }
             h.textContent = `Your points are ${points}`;
         }
@@ -44,11 +44,18 @@ You start at 5 points.
         function report() {
             let ran = Math.random();
             if (ran >= 1/2) {
-                points = 10; // You successfully reported him and won 10 points
             } else {
-                points = 0;  // You failed to report him and lost everything (0 points)
+                points--;
             }
             h.textContent = `Your points are ${points}`; // Fixed the typo here
+        }
+        if (points === 10){
+        alert("you win");
+        points = 5
+        }
+        else  if (points === 0){
+        alert("you lose")
+        points = 5
         }
     </script>
 </body>
