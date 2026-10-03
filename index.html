@@ -14,23 +14,18 @@
     <link rel="stylesheet" href="PlatForm.css">
 </head>
 <body>
-
     <pre>
 The Supreme Leader exists and the 2nd in command committed a crime.
 He will reward you 1 point if you don't report him, but the Supreme Leader will take 2 if he finds out.
 If you try to report him: if you win, you get 10 points; if you lose, you get 0 points.
 You start at 5 points.
     </pre>
-
     <button onclick="report()">Report 2nd in command</button>
     <button onclick="dont_report()">Don't report 2nd in command</button>
-
     <h1 id="h">Your points are: 5</h1>
-
     <script>
         let h = document.getElementById("h");
         let points = 5;
-
         function dont_report() {
             let ran = Math.random();
             if (ran >= 1/2) {
@@ -40,7 +35,6 @@ You start at 5 points.
             }
             h.textContent = `Your points are ${points}`;
         }
-
         function report() {
             let ran = Math.random();
             if (ran >= 1/2) {
