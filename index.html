@@ -26,6 +26,9 @@ You start at 5 points.
     <script>
         let h = document.getElementById("h");
         let points = 5;
+        function update(){
+        h.textContent = `Your points are ${points}`;
+            }
         function dont_report() {
             let ran = Math.random();
             if (ran >= 1/2) {
@@ -42,14 +45,16 @@ You start at 5 points.
             } else {
                 points--;
             }
-            h.textContent = `Your points are ${points}`; // Fixed the typo here
+            update()
         }
         function result(){
+            update()
         if (points >= 10){
         alert("you win");
         points = 5
         }
         else  if (points <= 0){
+            update()
         alert("you lose")
         points = 5
         }
